@@ -2,7 +2,8 @@
 
 /* universal styles */
 html{
-    /* width: 100vw; */
+    width: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -10,7 +11,7 @@ html{
 body{
     padding: 0;
     margin: 0;
-    /* width: 100vw; */
+    width: 100%;
     font-size: 16px;
     font-family: 'Hind Siliguri', sans-serif;
     font-family: 'Rubik', sans-serif;
@@ -30,6 +31,9 @@ a:hover{
     cursor: pointer;
     color: yellow;
 }
+
+
+
 
 
 /* header */
@@ -86,7 +90,6 @@ main .main-content .jumbotron{
     color: white;
     margin-top: 2rem;
     overflow: hidden; /* to offset the value of the margin of p */
-    flex-shrink: 1;
 }
 
 main .main-content .jumbotron .jumbotron-text{
@@ -231,4 +234,61 @@ footer .copyright{
 
 .footer-links{
     margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 590px){
+    
+    body{
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    header,
+    body{
+        width: 200vw;
+    }
+
+}
+
+@media only screen and (max-width: 300px){
+    
+    body{
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    body,
+    header{
+        width: 250vw;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 250px){
+    
+    body{
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    body,
+    header{
+        width: 300vw;
+    }
+}
+
+@media only screen and (max-width: 199px){
+    
+    body{
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    body,
+    header{
+        width: 360vw;
+    }
 }
