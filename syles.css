@@ -1,0 +1,234 @@
+
+
+/* universal styles */
+html{
+    /* width: 100vw; */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    /* width: 100vw; */
+    font-size: 16px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+
+
+/* header */
+
+
+
+
+
+
+header{
+    margin: 0;
+    width: 100vw;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+}
+
+header nav{
+    justify-content: space-between;
+    height: 100%;
+}
+
+header nav img{
+    margin-left: 2rem;
+}
+
+header nav ul{
+    margin-right: 2rem;
+    list-style-type: none;
+    align-self: center;
+}
+
+header nav ul li{
+    display: inline;
+    margin: 0 1rem;
+}
+
+
+
+/* main content */
+
+
+/* jumbotron */
+
+main .main-content .jumbotron{
+    background-image: url("https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 28rem;
+    color: white;
+    margin-top: 2rem;
+    overflow: hidden; /* to offset the value of the margin of p */
+    flex-shrink: 1;
+}
+
+main .main-content .jumbotron .jumbotron-text{
+    margin: 0 auto;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 16rem;
+}
+
+
+
+
+/* description section */
+
+.description{
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+
+
+/* products */
+
+
+
+
+.products{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product{
+    width: 30%;
+    height: 30rem;
+    margin-bottom: 1rem;
+    background-color: rgb(237, 237, 237);
+    transition: 0.07s;
+}
+
+.product:hover{
+    -webkit-box-shadow: 0px 5px 14px -4px #000000; 
+    box-shadow: 0px 3px 10px -2px #333333;
+    cursor: pointer;
+}
+
+.product img{
+    width: 90%;
+    height: 40%; /* needs revision */
+    margin: 0 5%;
+}
+
+.product .button{   
+    font-size: 1.2rem;
+    height: 2.5rem;
+    margin: 0 5% 0 0;
+    color: blue;
+    text-decoration: none;
+}
+
+.product h1{
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.product h3{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.products .buttons{
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.products .buttons a:hover{
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 860px) {
+    .product{
+        width: 45%; 
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .product{
+        width: 90%; 
+        margin: 1rem 0;
+    }
+
+    .product .button{
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+
+
+/* locations */
+
+.location{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* footer */
+
+
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer div{
+    width: 100%;
+}
+
+footer .copyright{
+    margin: 2rem 0;
+}
+
+.footer-links{
+    margin-bottom: 2rem;
+}
