@@ -237,7 +237,7 @@ footer .copyright{
 }
 
 
-@media only screen and (max-width: 590px){
+/* @media only screen and (max-width: 590px){
     
     body{
         height: auto;
@@ -291,4 +291,4 @@ footer .copyright{
     header{
         width: 360vw;
     }
-}
+} */
